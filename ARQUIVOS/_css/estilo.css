@@ -3,15 +3,6 @@
 body{
     background-color: rgba(220,220,220,0.5);
     color: rgba(0,0,0,1);
-    /*background-color: hsla(16,81%,93%,1);
-    background-color: rgb(106,90,205);
-    background-color: hsl(165,81%,93%);
-    background-image: url("ARQUIVOS/_imagens/backgroud-aço-escovado.jpg");
-    color: #60453e;
-    color: rgba(0,0,0,0.5);
-    color: hsl(165,81%,93%);            
-    color: hsla(165,81%,93%,1);
-    color: rgb(0,0,0);*/
 }
 
 p {
@@ -45,4 +36,26 @@ figure.foto-legenda figcaption{
 
 figure.foto-legenda:hover figcaption{
     opacity: 1;
+}
+/*Formatação do MENU*/
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu h1 {
+    display: none;
 }
