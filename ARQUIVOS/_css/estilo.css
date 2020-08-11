@@ -1,14 +1,31 @@
 @charset "UTF-8";
+
 /*Formatação do Corpo*/
 body{
     background-color: rgba(220,220,220,0.5);
     color: rgba(0,0,0,1);
 }
 
+/*Formatação da "div"*/
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto ;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
 }
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 950px;
+    top: 40px;
+}
+
 /* Formatação de imagens com legendas */
 figure.foto-legenda{
     position: relative;
@@ -46,7 +63,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 700px;
 }
 
 nav#menu li {
