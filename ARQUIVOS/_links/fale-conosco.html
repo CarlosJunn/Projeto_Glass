@@ -1,15 +1,36 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Glass</title>
+        <link rel="stylesheet" type="text/css" href="../_css/estilo.css">
+    </head>
+    <script language="javascript" src="../_javascript/funcoes.js"></script>
+    <body>
+        <div id="interface">
 
-[AQUI ENTRA UMA FOTO]
+            <header id="cabecalho">
+                <hgourp>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando  </h2>
+                </hgourp>
+    
+                <img id="icone" src="../_imagens/contato.png">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+                <nav id="menu">
+                <!--Lista sem demarcadores-->
+                    <h1>Menu Principal</h1>
+                    <ul type="disc">
+                        <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="index.html" target="_self">Home</a></li>
+                        <li onmouseover="mudaFoto('../_imagens/especificacoes.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="../_links/specs.html" target="_self">Especificações</a></li>
+                        <li onmouseover="mudaFoto('../_imagens/fotos.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="../_links/fotos.html" target="_self">Fotos</a></li>
+                        <li onmouseover="mudaFoto('../_imagens/multimidia.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="../_links/multimidia.html" target="_self">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('../_imagens/contato.png')" onmouseout="mudaFoto('../_imagens/contato.png')"><a href="../_links/fale-conosco.html" target="_self">Fale conosco</a></li>       
+                    </ul>
+                </nav>
 
+            </header>
 Fale Conosco > Contato
 Formulário de Contato
 por Gustavo Guanabara
@@ -43,5 +64,9 @@ Quero um Google Glass
 
 [BOTÃO ENVIAR]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+            <footer id="rodape">
+               <p>Copyright 2013 - by Gustavo Guanabara<br><a href="http://Facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://Twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
