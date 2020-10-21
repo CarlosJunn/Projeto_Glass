@@ -7,6 +7,14 @@
 
 /*Formatação do Corpo*/
 
+video#filme-01 {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 500px;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color: rgba(220,220,220,0.5);
@@ -244,6 +252,14 @@ aside#lateral h2 {
     font-size: 13pt;
     color: #ffffff;
     padding: 5px;
+}
+
+aside#lateral video{
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 350px;
 }
 
 /*Formatação do rodapé*/
