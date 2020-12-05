@@ -31,39 +31,67 @@
                 </nav>
 
             </header>
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
+            <section id="corpo-full">
+                <article id="np">
+                    <header id="ca">
+                        <hgrou>
+                            <h3>Fale Conosco&nbsp; > &nbsp;Contato</h3>
+                            <h1>Formulário de Contato</h1>
+                            <h2>Por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                        </hgrou>
+                    </header>
+                    <form action="mailto:" mathod="post" id="fCONTATO">
+                        <fieldset id="identificacao">
+                            <legend>Identificação do Usuário</legend>                            
+                            <p><label for="cNOME">Nome: </label><input type="text" name="tNOME" id="cNOME"  size="25" maxlength="30" placeholder="nome completo"></p>
+                            <p><label for="cSENHA">Senha:</label><input type="password" name="tSENHA" id="cSENHA" size="8" maxlength="8" placeholder="8 dígitos"></p>
+                            <p><label for="cMAIL">E-mail:</label><input type="email" name="tMAIL" id="cMAIL" size="25" maxlength="40"></p>
+                            <fieldset id="sexo">
+                                <legend>Sexo</legend>
+                                    <input type="radio" name="tSEXO" id="cMASC" checked><label for="cMASC">Masculino</label><br>
+                                    <input type="radio" name="tSEXO" id="cFEM"><label for="cFEM">Feminino</label>
+                            </fieldset>
+                            <p><label for="cDATA">Data de Nascimento:</label><input type="date" name="tDATA" id="cDATA"></p>
+                        </fieldset>
+                        <fieldset id="endereco">
+                            <legend>Endereço do Usuário</legend>
+                            <p><label for="cRUA">Logradouro:</label><input type="text" name="tRUA" id="cRUA" size="13" maxlength="80" placeholder="Rua, avenida, travessa"></p>
+                            <p><label for="cNUM">Número:</label><input type="number" name="tNUM" id="cNUM" min="0" max="9999"></p>
+                            <p><label for="cESTADO">Estado:</label>
+                                <select name="tESTADO" id="cESTADO">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="DF" selected>Distrito Federal</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                </select></p>
+                            <p><label for="cCIDADE">Cidade:</label><input type="text" name="tCIDADE" id="cCIDADE" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+                            <datalist id="cidades">
+                                <option value="Gama"></option>
+                                <option value="Santa Maria"></option>
+                                <option value="Candangolandia"></option>
+                                <option value="Guará"></option>
+                            </datalist>
+                        </fieldset>
+                        <fieldset id="mensagem">
+                            <legend>Mensagem do Usuário</legend>
+                            <p><label for="cURG">Grau de Urgência:</label>Min<input type="range" name="tURG" id="cURG" min="0" max="10" step="2">Max</p>
+                            <p><label for="">Mensagem:</label><textarea name="tMSG" id="cMSG" cols="45" rows="5" placeholder="Deixe aqui sua mensagem..."></textarea></p>
+                        </fieldset>
+                        <fieldset id="quero">
+                            <legend>Quero um Google Glass</legend>
+                            <p><label for="">Gostaria de adquirir um Google Glass quando disponível:</label></p>
+                            <p><label for="">Cor:</label></p>
+                            <p><label for="">Quantidade:</label></p>
+                            <p><label for="">Preço Total: R$</label></p>
+                        </fieldset>
 [BOTÃO ENVIAR]
-
+                    </form>
+                </article>
+            </section>
             <footer id="rodape">
                <p>Copyright 2013 - by Gustavo Guanabara<br><a href="http://Facebook.com/cursosemvideo" target="_blank">Facebook</a> | <a href="http://Twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
             </footer>
